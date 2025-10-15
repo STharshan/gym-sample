@@ -27,7 +27,7 @@ const Navbar = () => {
   // ];
 
   return (
-    <nav className="bg-[#1b1b1b] text-white px-6 md:px-12 lg:px-20 shadow-md fixed w-full z-50">
+    <nav className="bg-black text-white px-6 md:px-12 lg:px-20 shadow-md fixed w-full z-50">
       <div className="max-w-7xl mx-auto flex items-center justify-between h-18">
         {/* Logo */}
         <div className="flex items-center gap-3">
@@ -59,7 +59,6 @@ const Navbar = () => {
           >
             Become a Member
           </button>
-          <ThemeToggle />
         </div>
 
         {/* Mobile Right Side */}
@@ -69,9 +68,6 @@ const Navbar = () => {
           >
             Become a Member
           </button>
-          <div className="flex items-center">
-            <ThemeToggle />
-          </div>
 
           {/* Mobile Menu Button */}
           <button

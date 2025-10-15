@@ -14,8 +14,8 @@ const AboutSection = () => {
   }, []);
 
   return (
-    <section className="py-20 bg-white" id="about">
-      <div className="max-w-7xl mx-auto px-6 md:px-10">
+    <section className="py-20 bg-black" id="about">
+      <div className="max-w-7xl mx-auto px-6 md:px-10 mt-15">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div data-aos="fade-right">
@@ -37,17 +37,14 @@ const AboutSection = () => {
               data-aos-delay="300"
               className="text-gray-700 text-base md:text-lg leading-relaxed mb-8"
             >
-                Our state-of-the-art facility provides an invigorating environment for individuals at every fitness level.
+              Our state-of-the-art facility provides an invigorating environment for individuals at every fitness level.
             </p>
 
-            <a
-              href="/#contact"
-              data-aos="zoom-in"
-              data-aos-delay="450"
-              className="inline-block bg-[#1E3A8A] hover:bg-[#0F216B] text-white px-8 py-3 rounded-full text-lg font-medium shadow-md hover:shadow-xl transition-all duration-300"
-            >
-              About Peak
-            </a>
+            <button className="border-2 border-yellow-300 text-white px-6 py-3 rounded-full flex items-center gap-2 group hover:bg-yellow-300 transition font-semibold">
+              <span className="transition-transform duration-300 text-sm lg:text-base group-hover:-translate-x-1 group-active:-translate-x-1">
+                About Peak
+              </span>
+            </button>
           </div>
 
           {/* Image Section */}

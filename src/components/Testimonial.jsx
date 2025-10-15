@@ -48,7 +48,7 @@ export default function TrainersSection() {
   };
 
   return (
-    <section className="w-full bg-[#0e0e0e] text-white py-20 px-6 md:px-16 lg:px-24">
+    <section className="w-full bg-black text-white py-20 px-6 md:px-16 lg:px-24">
       <div className="max-w-6xl mx-auto text-center mb-12">
         <p className="text-yellow-400 text-sm font-semibold mb-2">★ Our Trainers</p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
