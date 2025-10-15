@@ -79,7 +79,7 @@ export default function ProgramsSection() {
               onClick={() => toggleAccordion(index)}
             >
               {/* Left: Number */}
-              <span className="absolute left-0 text-yellow-400 font-mono text-2xl">
+              <span className="absolute left-0 text-primary font-mono text-2xl">
                 {String(program.id).padStart(2, "0")}
               </span>
 
@@ -91,9 +91,9 @@ export default function ProgramsSection() {
               {/* Right: Plus/Minus */}
               <span className="absolute right-0">
                 {openIndex === index ? (
-                  <Minus className="text-yellow-400 w-5 h-5" />
+                  <Minus className="text-primary w-5 h-5" />
                 ) : (
-                  <Plus className="text-yellow-400 w-5 h-5" />
+                  <Plus className="text-primary w-5 h-5" />
                 )}
               </span>
             </div>

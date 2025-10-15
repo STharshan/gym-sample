@@ -45,7 +45,7 @@ const Navbar = () => {
               key={item.name}
               smooth
               href={item.href}
-              className="flex items-center gap-1 font-semibold text-white hover:text-[#ef5a24] transition-colors"
+              className="flex items-center gap-1 font-semibold text-white text-primary-hover transition-colors"
             >
               {item.name}
             </a>
@@ -55,7 +55,7 @@ const Navbar = () => {
         {/* Desktop Social Icons */}
         <div className="hidden lg:flex items-center gap-3">
            <button
-            className="md:flex items-center gap-1 font-semibold hidden text-white hover:text-[#ef5a24] border rounded-lg p-1 transition-colors"
+            className="md:flex items-center gap-1 font-semibold hidden text-white text-primary-hover border rounded-lg p-2 transition-colors"
           >
             Become a Member
           </button>
@@ -64,7 +64,7 @@ const Navbar = () => {
         {/* Mobile Right Side */}
         <div className="flex items-center gap-2 lg:hidden">
           <button
-            className="flex items-center gap-1 font-semibold text-white hover:text-[#ef5a24] transition-colors"
+            className="flex items-center gap-1 font-semibold text-white border text-primary-hover rounded-lg p-2 transition-colors"
           >
             Become a Member
           </button>
@@ -72,9 +72,9 @@ const Navbar = () => {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setMenuOpen(!menuOpen)}
-            className="bg-[#ef5a24] p-2 rounded-full text-xl"
+            className="bg-primary p-2 rounded-full text-xl"
           >
-            {menuOpen ? <FiX /> : <FiMenu />}
+            {menuOpen ? <FiX className="text-black"/> : <FiMenu className="text-black"/>}
           </button>
         </div>
       </div>
@@ -88,7 +88,7 @@ const Navbar = () => {
               smooth
               href={item.href}
               onClick={() => setMenuOpen(false)}
-              className="block py-2 text-gray-200 hover:text-[#ef5a24] border-b border-gray-700 last:border-0 transition-colors"
+              className="block py-2 text-gray-200 text-primary-hover border-b border-gray-700 last:border-0 transition-colors"
             >
               {item.name}
             </a>

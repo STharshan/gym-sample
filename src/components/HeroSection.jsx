@@ -27,7 +27,7 @@ const HeroSection = () => {
       <section className="relative z-[2] text-white min-h-screen flex items-center justify-center px-6 md:px-12 lg:px-20">
         <div className="max-w-7xl w-full flex flex-col items-center text-center gap-8 md:gap-12">
           <div data-aos="fade-up">
-            <p className="text-yellow-300">The #1 Gym In The Country</p>
+            <p className="text-primary">The #1 Gym In The Country</p>
             <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-extrabold leading-tight">
               Peak Performance.
               <br />
@@ -41,7 +41,7 @@ const HeroSection = () => {
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mt-6">
               <a href="/#contact">
-                <button className="border-2 border-yellow-300 text-white px-6 py-3 rounded-full flex items-center gap-2 group hover:bg-yellow-300 transition font-semibold">
+                <button className="border-2 border-primary bg-primary-hover text-white hover:text-black px-6 py-3 rounded-full flex items-center gap-2 group hover:bg-primary transition font-semibold">
                   <span className="transition-transform duration-300 text-sm lg:text-base group-hover:-translate-x-1 group-active:-translate-x-1">
                     Let's Reach Your Peak
                   </span>
@@ -49,7 +49,7 @@ const HeroSection = () => {
                 </button>
               </a>
 
-              <button className="w-14 h-14 rounded-full border-2 border-gray-500 flex items-center justify-center hover:border-yellow-300 transition">
+              <button className="w-14 h-14 rounded-full border-2 border-gray-500 flex items-center justify-center border-primary-hover transition">
                 <FiPlay className="text-2xl" />
               </button>
             </div>
