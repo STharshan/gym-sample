@@ -20,14 +20,14 @@ const AboutSection = () => {
           {/* Text Content */}
           <div data-aos="fade-right">
             <p className="text-yellow-300">About Us</p>
-            <h4 className="text-2xl sm:text-3xl md:text-4xl font-bold text-[#1E3A8A] mb-6 leading-tight">
+            <h4 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Elevate Your Potential
             </h4>
 
             <p
               data-aos="fade-up"
               data-aos-delay="150"
-              className="text-gray-700 text-base md:text-lg leading-relaxed mb-4"
+              className="text-gray-300 text-base md:text-lg leading-relaxed mb-4"
             >
               At Peak, We believe in elevating more than just weights, we're here to inspire a lifestyle of strength, health, and overall well- being.
             </p>
@@ -35,12 +35,12 @@ const AboutSection = () => {
             <p
               data-aos="fade-up"
               data-aos-delay="300"
-              className="text-gray-700 text-base md:text-lg leading-relaxed mb-8"
+              className="text-gray-300 text-base md:text-lg leading-relaxed mb-8"
             >
               Our state-of-the-art facility provides an invigorating environment for individuals at every fitness level.
             </p>
 
-            <button className="border-2 border-yellow-300 text-white px-6 py-3 rounded-full flex items-center gap-2 group hover:bg-yellow-300 transition font-semibold">
+            <button className="border-2 border-yellow-300 text-white px-8 py-3 rounded-xl flex items-center gap-2 group hover:bg-yellow-300 transition font-semibold">
               <span className="transition-transform duration-300 text-sm lg:text-base group-hover:-translate-x-1 group-active:-translate-x-1">
                 About Peak
               </span>
