@@ -62,7 +62,7 @@ export default function TrainersSection() {
     <section className="w-full bg-black text-white py-20 px-6 md:px-16 lg:px-24">
       {/* Section Header */}
       <div className="max-w-6xl mx-auto text-center mb-12" data-aos="fade-up">
-        <p className="text-yellow-400 text-sm font-semibold mb-2">
+        <p className="text-primary text-sm font-semibold mb-2">
           ★ Our Trainers
         </p>
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-tight mb-4">
@@ -106,7 +106,7 @@ export default function TrainersSection() {
                   <h3 className="text-lg font-bold text-white tracking-wide">
                     {trainer.name}
                   </h3>
-                  <p className="text-yellow-400 text-sm font-medium">
+                  <p className="text-primary text-sm font-medium">
                     {trainer.role}
                   </p>
                 </div>

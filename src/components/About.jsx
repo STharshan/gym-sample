@@ -19,7 +19,7 @@ const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           {/* Text Content */}
           <div data-aos="fade-right">
-            <p className="text-yellow-300">About Us</p>
+            <p className="text-primary">About Us</p>
             <h4 className="text-4xl sm:text-5xl md:text-6xl font-bold text-white mb-6 leading-tight">
               Elevate Your Potential
             </h4>
@@ -40,7 +40,7 @@ const AboutSection = () => {
               Our state-of-the-art facility provides an invigorating environment for individuals at every fitness level.
             </p>
 
-            <button className="border-2 border-yellow-300 text-white px-8 py-3 rounded-xl flex items-center gap-2 group hover:bg-yellow-300 transition font-semibold">
+            <button className="border-2 border-primary bg-primary-hover text-white px-8 py-3 rounded-xl flex items-center gap-2 group hover:text-black transition font-semibold">
               <span className="transition-transform duration-300 text-sm lg:text-base group-hover:-translate-x-1 group-active:-translate-x-1">
                 About Peak
               </span>
