@@ -1,7 +1,9 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Plus, Minus } from "lucide-react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const programs = [
   {
@@ -27,27 +29,51 @@ const programs = [
 export default function ProgramsSection() {
   const [openIndex, setOpenIndex] = useState(null);
 
+  useEffect(() => {
+    AOS.init({
+      duration: 1000,
+      once: true,
+      offset: 100,
+      easing: "ease-in-out",
+    });
+  }, []);
+
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
   };
 
   return (
-    <section className="w-full bg-black text-white py-20 px-6 md:px-16 lg:px-32">
-      <div className="max-w-4xl mx-auto text-center">
+    <section
+      className="w-full bg-black text-white py-20 px-6 md:px-16 lg:px-32"
+      id="programs"
+    >
+      {/* Section Header */}
+      <div
+        className="max-w-4xl mx-auto text-center"
+        data-aos="fade-up"
+      >
         <h2 className="text-3xl md:text-5xl font-bold mb-4 tracking-tight">
           PROGRAMS THAT DELIVER <br className="hidden md:block" /> REAL RESULTS
         </h2>
-        <p className="text-gray-400 text-lg max-w-lg mx-auto mb-12">
+        <p
+          className="text-gray-400 text-lg max-w-lg mx-auto mb-12"
+          data-aos="fade-up"
+          data-aos-delay="200"
+        >
           Personalized, trackable programs built to push limits and redefine what your body can do.
         </p>
       </div>
 
+      {/* Accordion List */}
       <div className="space-y-6 max-w-3xl mx-auto">
         {programs.map((program, index) => (
           <div
             key={program.id}
             className="border-t border-gray-700 pt-6 pb-4"
+            data-aos="fade-up"
+            data-aos-delay={index * 200}
           >
+            {/* Accordion Header */}
             <div
               className="relative flex items-center justify-between cursor-pointer"
               onClick={() => toggleAccordion(index)}
@@ -72,6 +98,7 @@ export default function ProgramsSection() {
               </span>
             </div>
 
+            {/* Accordion Body (Framer Motion) */}
             <AnimatePresence>
               {openIndex === index && (
                 <motion.div
